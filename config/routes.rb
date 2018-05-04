@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'owners#index'
+  root 'admins#index'
 
   resources :admin
   resources :courses

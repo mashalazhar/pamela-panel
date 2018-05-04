@@ -1,7 +1,30 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Admin.create(first_name: "Mashal", last_name: "Azhar", email: "test@test.com", username: "testadmin", password: "test")
+
+# Course.create(name: "Psychology", total_hours: 40)
+# Course.create(name: "Sociology", total_hours: 50)
+# Course.create(name: "Anthropology", total_hours: 60)
+
+# Cohort.create(name: "PSY101", start_date: '2018-05-03', end_date: '2018-06-03', instructor_id: 1, course_id: 1)
+# Cohort.create(name: "PSY102", start_date: '2018-05-03', end_date: '2018-06-03', instructor_id: 1, course_id: 1)
+# Cohort.create(name: "SOC101", start_date: '2018-06-03', end_date: '2018-07-03', instructor_id: 2, course_id: 2)
+# Cohort.create(name: "SOC102", start_date: '2018-06-03', end_date: '2018-07-03', instructor_id: 2, course_id: 2)
+# Cohort.create(name: "ANT101", start_date: '2018-07-03', end_date: '2018-05-03', instructor_id: 3, course_id: 2)
+# Cohort.create(name: "ANT102", start_date: '2018-07-03', end_date: '2018-05-03', instructor_id: 3, course_id: 1)
+
+# Instructor.create(first_name: "T'Challa", last_name: "Wakanda", age: "30", salary: "50000", education: "College", cohort_id: 1)
+# Instructor.create(first_name: "Bruce", last_name: "Wayne", age: "40", salary: "60000", education: "Masters", cohort_id: 2)
+# Instructor.create(first_name: "Tony", last_name: "Stark", age: "50", salary: "70000", education: "PhD", cohort_id: 3)
+
+# Student.create(first_name: "Snow", last_name: "White", age: "25", education: "PhD", cohort_id: 1)
+# Student.create(first_name: "Ariel", last_name: "Mermaid", age: "26", education: "College", cohort_id: 1)
+# Student.create(first_name: "King", last_name: "James", age: "27", education: "Masters", cohort_id: 1)
+# Student.create(first_name: "Ursula", last_name: "Queen", age: "28", education: "Masters", cohort_id: 1)
+# Student.create(first_name: "Cinder", last_name: "Ella", age: "29", education: "HS", cohort_id: 1)
+# Student.create(first_name: "Tiana", last_name: "Princess", age: "30", education: "HS", cohort_id: 1)
+# Student.create(first_name: "Belle", last_name: "Beast", age: "24", education: "College", cohort_id: 1)
+# Student.create(first_name: "Hakuna", last_name: "Matata", age: "23", education: "College", cohort_id: 1)
+# Student.create(first_name: "Simba", last_name: "Lion", age: "31", education: "College", cohort_id: 1)
+# Student.create(first_name: "Mufasa", last_name: "Rafiki", age: "32", education: "Masters", cohort_id: 1)
+# Student.create(first_name: "King", last_name: "Cole", age: "33", education: "Masters", cohort_id: 1)
+# Student.create(first_name: "Humpty", last_name: "Dumpty", age: "34", education: "HS", cohort_id: 1)
+
