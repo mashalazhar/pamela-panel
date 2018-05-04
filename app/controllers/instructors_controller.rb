@@ -1,11 +1,19 @@
 class InstructorsController < ApplicationController
     def index
-       puts "This is the Instructors Controller"
-       @instructors = Instructor.all 
-    end
+        @instructors = Instructor.all 
+     end
+ 
+     def show
+        @instructor = Instructor.find(params[:id])
+     end 
 
-    def show
-       puts "This will show specific instructors"
-       @current_instructor = Instructor.find(params[:id])
-    end 
+     def edit
+        @instructor = Instructor.find(params[:id])
+     end 
+
+     def update
+        @instructor = Instructor.find(params[:id])
+        @instructor.update(course)
+        redirect_to '/instructors'
+    end
 end

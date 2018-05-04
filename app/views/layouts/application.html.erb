@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PamelaPanel</title>
+    <title>Pamelas Panel</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,26 @@
   </head>
 
   <body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home",    '/' %></li>
+          <li><%= link_to "Students",    '/students' %></li>
+          <li><%= link_to "Instructors",    '/instructors' %></li>
+          <li><%= link_to "Courses",    '/courses' %></li>
+          <li><%= link_to "Cohorts",    '/cohorts' %></li>
+          <li><%= link_to "Sign in", '/' %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
     <%= yield %>
   </body>
-</html>
+
+
+  </html>
+
