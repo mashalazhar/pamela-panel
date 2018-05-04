@@ -1,1 +1,6 @@
-<h1>Hello Courses</h1>
+<h1>Courses</h1>
+
+<% @courses.each do |x| %>
+    <h1><%= x.name %></h1>
+    <p>Total Hours: <%= x.total_hours %>
+    <% end %>

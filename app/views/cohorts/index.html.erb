@@ -1,1 +1,7 @@
-<h1>Hello Cohorts</h1>
+<h1>Cohorts</h1>
+
+<% @cohorts.each do |x| %>
+    <h1><%= x.name %></h1>
+    <p>Start Date: <%= x.start_date %> | End Date: <%= x.end_date %></p>
+    <p>Course ID: <%= x.course_id %></p>
+    <% end %>
