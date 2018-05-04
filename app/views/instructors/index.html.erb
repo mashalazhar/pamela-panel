@@ -1,1 +1,7 @@
-<h1>Hello Instructors</h1>
+<h1>Instructors</h1>
+
+<% @instructors.each do |x| %>
+    <h1><%= x.first_name %> <%= x.last_name %></h1>
+    <p>Age: <%= x.age %> | Salary: <%= x.salary %> | Education: <%= x.education %></p>
+    <p>Cohort ID: <%= x.cohort_id %></p>
+    <% end %>
