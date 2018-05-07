@@ -16,4 +16,23 @@ class StudentsController < ApplicationController
         @student.update(course)
         redirect_to '/students'
     end
+
+    def new 
+        @student = Student.new
+    end
+
+    def create 
+        student.create(student_params)
+        redirect_to '/students'
+    end
+
+    def destroy
+        student.find(params[:id]).destroy
+        redirect_to '/students'
+    end
+
+    private
+    def student
+      params.require(:student).permit(:name, :start_date, :end_date, :instructor_id, :course_id)
+    end
 end

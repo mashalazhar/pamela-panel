@@ -13,7 +13,26 @@ class InstructorsController < ApplicationController
 
      def update
         @instructor = Instructor.find(params[:id])
-        @instructor.update(course)
+        @instructor.update(instructor_params)
         redirect_to '/instructors'
+     end
+
+    def new 
+        @instructor = Instructor.new
+    end
+
+    def create 
+        Instructor.create(instructor_params)
+        redirect_to '/instructors'
+    end
+
+    def destroy
+        instructor.find(params[:id]).destroy
+        redirect_to '/instructors'
+    end
+
+    private
+    def instructor_params
+      params.require(:instructor).permit(:first_name, :last_name, :start_date, :end_date, :instructor_id, :course_id)
     end
 end

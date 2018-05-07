@@ -15,7 +15,26 @@ class CoursesController < ApplicationController
 
     def update
         @course = Course.find(params[:id])
-        @course.update(course)
+        @course.update(course_params)
         redirect_to '/courses'
     end
+
+    def new 
+        @course = course.new
+    end
+
+    def create 
+        course.create(course_params)
+        redirect_to '/courses'
+    end
+
+    def destroy
+        course.find(params[:id]).destroy
+        redirect_to '/courses'
+    end
+
+    # private
+    # def course
+    #   params.require(:course).permit(:name, :start_date, :end_date, :instructor_id, :course_id)
+    # end
 end
