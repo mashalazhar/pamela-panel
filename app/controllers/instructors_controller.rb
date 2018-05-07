@@ -27,7 +27,7 @@ class InstructorsController < ApplicationController
     end
 
     def destroy
-        instructor.find(params[:id]).destroy
+        Instructor.find(params[:id]).destroy
         redirect_to '/instructors'
     end
 

@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
      def update
         @student = Student.find(params[:id])
-        @student.update(course)
+        @student.update(course_params)
         redirect_to '/students'
     end
 
@@ -22,17 +22,17 @@ class StudentsController < ApplicationController
     end
 
     def create 
-        student.create(student_params)
+        Student.create(student_params)
         redirect_to '/students'
     end
 
     def destroy
-        student.find(params[:id]).destroy
+        Student.find(params[:id]).destroy
         redirect_to '/students'
     end
 
     private
-    def student
-      params.require(:student).permit(:name, :start_date, :end_date, :instructor_id, :course_id)
+    def student_params
+      params.require(:student).permit(:first_name, :last_name, :start_date, :end_date, :instructor_id, :course_id)
     end
 end
