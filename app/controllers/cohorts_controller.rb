@@ -13,7 +13,7 @@ class CohortsController < ApplicationController
 
      def update
         @cohort = Cohort.find(params[:id])
-        @cohort.update(cohort_params) # (course)
+        @cohort.update(cohort_params)
         redirect_to '/cohorts'
     end
 
