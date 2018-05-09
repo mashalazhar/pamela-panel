@@ -1,7 +1,23 @@
-<h1>MY COHORTS</h1>
-
-<h3><%= @cohort.name %></h3>
-<h3><%= @cohort.start_date %></h3>
-<h3><%= @cohort.end_date %></h3>
-<h3><%= @cohort.instructor_id %></h3>
-<h3><%= @cohort.course_id %></h3>
+<div class="container">
+  <h2><%= @cohort.name %></h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Instructor</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @cohort.name %></td>
+        <td><%= @cohort.start_date %></td>
+        <td><%= @cohort.end_date %></td>
+        <td><%= @cohort.instructor.first_name %> <%= @cohort.instructor.last_name %></td>
+        <td><%= @cohort.course.name %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

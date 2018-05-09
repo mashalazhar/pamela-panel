@@ -1,6 +1,21 @@
-<h1>Courses</h1>
-
-<% @courses.each do |x| %>
-    <h1><%= x.name %></h1>
-    <p>Total Hours: <%= x.total_hours %>
-    <% end %>
+    <div class="container">
+    <h2>Courses</h2>          
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <tr>
+        <% @courses.each do |x| %>
+          <td><%= x.name %></td>
+          <td><%= x.total_hours %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  

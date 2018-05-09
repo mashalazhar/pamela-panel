@@ -1,7 +1,28 @@
-<h1>Instructors</h1>
-
-<% @instructors.each do |x| %>
-    <h1><%= x.first_name %> <%= x.last_name %></h1>
-    <p>Age: <%= x.age %> | Salary: <%= x.salary %> | Education: <%= x.education %></p>
-    <p>Cohort ID: <%= x.cohort_id %></p>
-    <% end %>
+    <div class="container">
+    <h2>Instructors</h2>          
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Salary</th>
+          <th>Education</th>
+          <th>Cohort ID</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <tr>
+        <% @instructors.each do |x| %>
+          <td><%= x.first_name %></td>
+          <td><%= x.last_name %></td>
+          <td><%= x.age %></td>
+          <td><%= x.salary %></td>
+          <td><%= x.education %></td>
+          <td><%= x.cohort_id %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>

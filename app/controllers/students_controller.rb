@@ -8,11 +8,11 @@ class StudentsController < ApplicationController
      end 
 
      def edit
-        @student = Student.find(params[:id])
-     end 
+    @student = Student.find(params[:id])
+    end 
 
-     def update
-        @student = Student.find(params[:id])
+    def update
+    @student = Student.find(params[:id])
         @student.update(student_params)
         redirect_to '/students'
     end
@@ -27,7 +27,9 @@ class StudentsController < ApplicationController
     end
 
     def destroy
-        Student.find(params[:id]).destroy
+        x = Student.find(params[:id]).destroy
+        puts "SMDNASKJDKSDJSDKSDSJDSD"
+        puts x
         redirect_to '/students'
     end
 

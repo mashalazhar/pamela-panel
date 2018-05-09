@@ -1,7 +1,23 @@
-<h1>MY STUDENTS</h1>
-
-<h3><%= @student.first_name %></h3>
-<h3><%= @student.last_name %></h3>
-<h3><%= @student.age %></h3>
-<h3><%= @student.education %></h3>
-<h3><%= @student.cohort_id %></h3>
+<div class="container">
+  <h2><%= @student.first_name %> <%= @student.last_name %></h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Education</th>
+        <th>Cohort ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @student.first_name %></td>
+        <td><%= @student.last_name %></td>
+        <td><%= @student.age %></td>
+        <td><%= @student.education %></td>
+        <td><%= @student.cohort.name %></td>
+        </tr>
+    </tbody>
+  </table>
+</div>

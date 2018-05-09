@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'admins#index'
 
-  resources :admin
+  resources :admins
   resources :courses
   resources :cohorts
   resources :instructors

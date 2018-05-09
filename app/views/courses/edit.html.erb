@@ -2,9 +2,10 @@
     <%= f.label :name %>  
     <%= f.text_field :name, value: @course.name %>  
     <%= f.label :total_hours %>  
-    <%= f.number_field :start_date, value: @course.total_hours %>
+    <%= f.number_field :total_hours, value: @course.total_hours %>
     <%= f.submit %>
 <% end %>
 
+<p>
 
 <%= link_to 'Delete', course_path(@course), method: :delete %> 
