@@ -17,11 +17,13 @@
         <td><%= x.name %></td>
         <td><%= x.start_date %></td>
         <td><%= x.end_date %></td>
-        <td><%= Instructor.find(x.instructor_id).first_name %></td>
+        <td><%= Instructor.find(x.instructor_id).first_name %> <%= Instructor.find(x.instructor_id).last_name %></td>
         <td><%= Course.find(x.course_id).name %></td>
       </tr>
       <% end %>
     </tbody>
   </table>
 </div>
+
+
 

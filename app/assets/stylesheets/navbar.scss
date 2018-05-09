@@ -1,5 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
 }
 
 .sidenav {
@@ -9,41 +10,39 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: goldenrod;
     overflow-x: hidden;
     padding-top: 20px;
+    text-align: center;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 15px;
+    color: whitesmoke;
     display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: black;
 }
 
 .main {
     margin-left: 160px;
-    /* Same as the width of the sidenav */
-    font-size: 28px;
-    /* Increased text to enable scrolling */
+    font-size: 18px;
     padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
     .sidenav {
-        padding-top: 15px;
+        padding-top: 12px;
     }
     .sidenav a {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
 .container {
-    padding-left: 60px;
+    padding-left: 80px;
     margin: auto;
 }
