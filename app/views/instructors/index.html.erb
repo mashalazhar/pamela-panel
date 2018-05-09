@@ -1,4 +1,6 @@
-    <div class="container">
+<div class="main">
+<h2>Sidebar</h2>
+<div class="container">
     <h2>Instructors</h2>          
     <table class="table table-striped">
       <thead>
@@ -20,9 +22,11 @@
           <td><%= x.age %></td>
           <td><%= x.salary %></td>
           <td><%= x.education %></td>
-          <td><%= x.cohort_id %></td>
+          <td><%= Cohort.find(x.cohort_id).name %></td>
         </tr>
         <% end %>
       </tbody>
     </table>
   </div>
+</div>
+
