@@ -14,23 +14,33 @@
     </head>
 
     <div class="sidenav">
-    <a href="/">Home</a>
-    <hr>
-    <a href="/instructors">Instructors</a>
-    <hr>
-    <a href="/students">Students</a>
-    <hr>
-    <a href="/courses">Courses</a>
-    <hr>
-    <a href="/cohorts">Cohorts</a>
-  </div>
+    <div class="header">
+    <p>Header</p>
+    </div>
+
+      <a href="/">Home</a>
+      <hr>
+      <a href="/instructors">Instructors</a>
+      <hr>
+      <a href="/students">Students</a>
+      <hr>
+      <a href="/courses">Courses</a>
+      <hr>
+      <a href="/cohorts">Cohorts</a>
+    <div class="footer">
+    <p>Footer</p>
+    </div>
+    </div>
   
   <body>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
   <div class="container">
     <%= yield %>
   </div>
-
+  
   <%= javascript_include_tag "application" %>
   </body>
 </html>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'admins/index'
 
-  root 'admins#index'
+  root to: 'admins#index'
 
   resources :admins
   resources :courses
