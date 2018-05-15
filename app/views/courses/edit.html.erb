@@ -1,10 +1,4 @@
-<%= form_for @course do |f| %>  
-    <%= f.label :name %>  
-    <%= f.text_field :name, value: @course.name %>  
-    <%= f.label :total_hours %>  
-    <%= f.number_field :total_hours, value: @course.total_hours %>
-    <%= f.submit %>
-<% end %>
+<%= render 'form', x: @course %>
 
 <p>
 

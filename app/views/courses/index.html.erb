@@ -19,6 +19,7 @@
           <td><%= x.total_hours %></td>
           <td><%= link_to 'Edit', edit_course_path(x), remote:true %></td>
         </tr>
+        <div id='edit-<%= x.id%>'></div>
         <% end %>
       </tbody>
     </table>

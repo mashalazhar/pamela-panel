@@ -1,4 +1,4 @@
 console.log('thisisworkinggggggggg')
 
-editmycourse = document.getElementById('x-<%= @course.id%>')
-$(editmycourse).replaceWith("<%= j (render 'edit') %>");
+editmycourse = document.getElementById('edit-<%= @course.id%>')
+$(editmycourse).replaceWith("<%= j (render 'form') %>");
