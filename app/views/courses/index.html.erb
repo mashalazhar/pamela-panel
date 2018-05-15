@@ -3,14 +3,18 @@
     <table class="table table-striped">
       <thead>
         <tr>
+          <th>Course</th>
           <th>Name</th>
           <th>Total Hours</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
       
         <tr>
         <% @courses.each do |x| %>
+          <td>10<%= x.id %></td>
           <td><%= x.name %></td>
           <td><%= x.total_hours %></td>
         </tr>

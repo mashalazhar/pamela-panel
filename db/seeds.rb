@@ -1,11 +1,10 @@
-# Admin.create(first_name: "Mashal", last_name: "Azhar", email: "test@test.com", username: "testadmin", password: "test")
+# Admin.create(email: "test1@test.com", password: "12345test")
 
 # Course.create(name: "Psychology", total_hours: 40)
 # Course.create(name: "Sociology", total_hours: 50)
 # Course.create(name: "Anthropology", total_hours: 60)
 # Course.create(name: "TEST", total_hours: 1)
 # Course.create(name: "TEST2", total_hours: 2)
-
 
 # Cohort.create(name: "PSY101", start_date: '2018-05-03', end_date: '2018-06-03', instructor_id: 1, course_id: 1)
 # Cohort.create(name: "PSY102", start_date: '2018-05-03', end_date: '2018-06-03', instructor_id: 1, course_id: 1)
