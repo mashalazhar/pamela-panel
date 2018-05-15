@@ -1,4 +1,5 @@
 class CoursesController < ApplicationController
+    before_action :authenticate_admin!
     def index
         puts "This is the Instructors Controller"
         @courses = Course.all 

@@ -1,0 +1,13 @@
+<%= form_for @cohort do |f| %>  
+    <%= f.label :name %>  
+    <%= f.text_field :name, value: @cohort.name %>  
+    <%= f.label :start_date %>  
+    <%= f.number_field :age, value: @cohort.start_date %>
+    <%= f.label :end_date %>  
+    <%= f.number_field :age, value: @cohort.end_date %>
+    <%= f.label :instructor_id %>  
+    <%= f.number_field :age, value: @cohort.instructor_id %>
+    <%= f.label :course_id %>  
+    <%= f.number_field :age, value: @cohort.course_id %>
+    <%= f.submit %>
+<% end %>

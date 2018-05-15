@@ -9,6 +9,8 @@
           <th>Salary</th>
           <th>Education</th>
           <th>Cohort ID</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -21,7 +23,10 @@
           <td><%= x.salary %></td>
           <td><%= x.education %></td>
           <td><%= Cohort.find(x.cohort_id).name %></td>
+          <td><%= link_to 'Edit', edit_instructor_path(x), remote:true %></td>
+          <td><%= link_to 'Delete', instructor_path(x), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
         </tr>
+        <div id='edit-<%= x.id%>'></div>
         <% end %>
       </tbody>
     </table>

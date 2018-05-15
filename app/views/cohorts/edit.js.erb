@@ -1,0 +1,4 @@
+console.log('This works!')
+
+editmycourse = document.getElementById('edit-<%= @cohort.id%>')
+$(editmycourse).replaceWith("<%= j (render 'form') %>");
