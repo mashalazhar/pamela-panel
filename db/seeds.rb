@@ -1,4 +1,4 @@
-# Admin.create(email: "test1@test.com", password: "12345test")
+# Admin.create(email: "azhar.mashal@gmail.com", password: "testtest")
 
 # Course.create(name: "Psychology", total_hours: 40)
 # Course.create(name: "Sociology", total_hours: 50)

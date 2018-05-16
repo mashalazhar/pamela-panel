@@ -21,11 +21,12 @@
       <td><%= x.age %></td>
       <td><%= x.education %></td>
       <td><%= Cohort.find(x.cohort_id).name %></td>
-      <td><%= link_to 'Edit', edit_instructor_path(x), remote:true %></td>
-      <td><%= link_to 'Delete', instructor_path(x), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Edit', edit_student_path(x), remote:true %></td>
+      <td><%= link_to 'Delete', student_path(x), method: :delete, remote:true, data: { confirm: 'You cannot undo this action. Are you sure you want to delete?' } %></td>
     </tr>
     <div id='edit-<%= x.id%>'></div>
     <% end %>
   </tbody>
 </table>
+<ol><%= link_to "Enroll Student", new_student_path, class: "button" %></ol>
 </div>

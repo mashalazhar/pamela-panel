@@ -1,13 +1,62 @@
-<h2>Welcome, Admin</h2>          
-THIS IS THE BODY
-
+<div class="album py-5 bg-light">
 <div class="container">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">STUDENTS</h5>
-    <p class="card-text">These will be all students.</p>
-    <a href="#" class="btn btn-primary">All Students</a>
-  </div>
-</div>
+   <div class="row">
+      <div class="col-md-3">
+         <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="students.jpg" alt="Students" style="height: 225px; width: 100%; display: block;" src="<%=image_url('students.jpg')%>" data-holder-rendered="true">
+            <div class="card-body">
+               <p>
+               <p class="card-text">These students are currently enrolled in a cohort. Please be advised that students cannot register for more than one cohort at a time.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Students", "/students", class: "button" %></button>                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-3">
+         <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="instructors.jpg" alt="Instructors" style="height: 225px; width: 100%; display: block;" src="<%=image_url('instructors.jpg')%>" data-holder-rendered="true">
+            <div class="card-body">
+               <p>
+               <p class="card-text">An instructor can only teach one cohort per course. Please do not assign more than one cohort to an instructor.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Instructors", "/students", class: "button" %></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>      
+      <div class="col-md-3">
+         <div class="card mb-4 box-shadow">
+           <img class="card-img-top" data-src="cohorts.jpg" alt="Cohorts" style="height: 225px; width: 100%; display: block;" src="<%=image_url('cohorts.jpg')%>" data-holder-rendered="true">
+            <div class="card-body">
+               <p>
+               <p class="card-text">Each course has a few cohorts. Click below to view the list of courses offered before adding students and instructors to the cohort.</p>
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Courses", "/courses", class: "button" %></button>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <div class="col-md-3">
+         <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="courses.jpg" alt="Courses" style="height: 225px; width: 100%; display: block;" src="<%=image_url('courses.jpg')%>" data-holder-rendered="true">
+          <div class="card-body">
+               <p>
+               <p class="card-text">As a part of a course, each cohort includes required courses for graduation: Psychology, Anthropology, and Sociology. </p>
+               <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Cohorts", "/cohorts", class: "button" %></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      </div>
+   </div>
 </div>

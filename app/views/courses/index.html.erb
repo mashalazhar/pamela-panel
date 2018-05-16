@@ -18,11 +18,13 @@
           <td><%= x.name %></td>
           <td><%= x.total_hours %></td>
           <td><%= link_to 'Edit', edit_course_path(x), remote:true %></td>
-          <td><%= link_to 'Delete', course_path(x), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Delete', course_path(x), method: :delete, remote:true, data: { confirm: 'You cannot undo this action. Are you sure you want to delete?' } %></td>
         </tr>
         <div id='edit-<%= x.id%>'></div>
         <% end %>
       </tbody>
     </table>
+    <ol><%= link_to "Add New Course", new_course_path, class: "button" %></ol>
+    <ol><%= link_to "Enroll Student", new_student_path, class: "button" %></ol>
   </div>
   

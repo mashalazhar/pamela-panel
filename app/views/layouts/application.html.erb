@@ -11,12 +11,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
     <%= stylesheet_link_tag "navbar" %>
-    
-    </head>
+  </head>
 
     <div class="sidenav">
+    
     <div class="header">
-    <p>Header</p>
+    <%= image_tag("logo.png", width: '150px') %>
+    <p>
     </div>
 
       <a href="/">Home</a>
@@ -28,10 +29,14 @@
       <a href="/courses">Courses</a>
       <hr>
       <a href="/cohorts">Cohorts</a>
+     
+  <% if admin_signed_in? %>
     <div class="footer">
-    <p>Footer</p>
+      <p><%= link_to "Sign Out", destroy_admin_session_path, method: :delete %></p>
     </div>
-    </div>
+  <% end %>
+  
+  </div>
   
   <body>
 
