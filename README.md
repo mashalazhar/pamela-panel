@@ -1,25 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To begin, please run bundle install to install all gems necessary to run this app. Once installed, create database by running rails db:create in your terminal, followed by rails db:migrate and finally, rails db:seed. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# pamela-panel
+To sign in to the admin panel, please use the following: 
+un: test@test.com, pw: test123
