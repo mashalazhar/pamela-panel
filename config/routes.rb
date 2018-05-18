@@ -19,8 +19,6 @@ Rails.application.routes.draw do
     end
   end
 
-
-
   resources :admins
   resources :courses
   resources :cohorts

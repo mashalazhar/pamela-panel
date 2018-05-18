@@ -14,25 +14,25 @@
   </head>
 
     <div class="sidenav">
-    
+
     <div class="header">
     <%= image_tag("logo.png", width: '150px') %>
     <p>
     </div>
 
-      <a href="/">Home</a>
+      <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
       <hr>
-      <a href="/instructors">Instructors</a>
+      <a href="/instructors"><span class="glyphicon glyphicon-user"></span> Instructors</a>
       <hr>
-      <a href="/students">Students</a>
+      <a href="/students"><span class="glyphicon glyphicon-education"></span> Students</a>
       <hr>
-      <a href="/courses">Courses</a>
+      <a href="/courses"><span class="glyphicon glyphicon-book"></span> Courses</a>
       <hr>
-      <a href="/cohorts">Cohorts</a>
+      <a href="/cohorts"><span class="glyphicon glyphicon-bookmark"></span> Cohorts</a>
      
   <% if admin_signed_in? %>
     <div class="footer">
-      <p><%= link_to "Sign Out", destroy_admin_session_path, method: :delete %></p>
+      <p><span class="glyphicon glyphicon-log-out"></span><%= link_to "Sign Out", destroy_admin_session_path, method: :delete %></p>
     </div>
   <% end %>
   
