@@ -45,3 +45,6 @@ In the HTML, the data is displayed via Ruby syntax.
 ### Heroku 
 
 I have used Heroku to host my "Pamela's Panel" app. It allowed me to learn how to read the errors in the log and push efficiently. 
+
+
+
