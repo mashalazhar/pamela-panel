@@ -1,9 +1,16 @@
 # README for Pamela's Panel 
 
-To begin, please run bundle install to install all gems necessary to run this app. Once installed, create database by running $rails db:create in your terminal, followed by $rails db:migrate and finally, $rails db:seed. Run the app: $rails s
+To begin, please run bundle install to install all gems necessary to run this app. 
+
+Once installed, create database by running the following in your terminal: 
+- $rails db:create (will create a database)
+- $rails db:migrate (will migrate tables into database)
+- $rails db:seed (will populate the tables in database)
+- $rails s (will run the server)
 
 To sign in to the admin panel, please use the following: 
-un: test@test.com, pw: test123
+ - un: test@test.com
+ - pw: test123
 
 "Pamela's Panel" is an full-stack admin panel app created for an admin user at Lee University to be able to create, read, update, and delete instructors, students, courses, and cohorts. 
 
