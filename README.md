@@ -20,14 +20,14 @@ To sign in to the admin panel, please use the following:
 
 ## Technology
 
-# Backend
+## Backend
 - Ruby Rails
 - AJAX
 
-# Gems 
+## Gems 
 - Devise
 
-# Frontend
+## Frontend
 - Bootstrap
 
 ## How it works
