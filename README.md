@@ -2,7 +2,7 @@
 
 To begin, please run bundle install to install all gems necessary to run this app. 
 
-Once installed, create database by running the following in your terminal: 
+Once installed, let's run the following in your terminal: 
 - $rails db:create (will create a database)
 - $rails db:migrate (will migrate tables into database)
 - $rails db:seed (will populate the tables in database)
