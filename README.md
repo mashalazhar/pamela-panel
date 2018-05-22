@@ -1,4 +1,4 @@
-# README for Pamela's Panel 
+# Pamela's Panel 
 
 To begin, please run bundle install to install all gems necessary to run this app. 
 
